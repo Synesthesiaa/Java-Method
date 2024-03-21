@@ -11,14 +11,20 @@ package com.mycompany.personn;
 import java.util.Scanner;
 public class Personn {
     private String name;
+    private int age;
     
-    public Personn(String name){
+    public Personn(String name, int age){
         this.name = name;
+        this.age = age;
     
     }
     
     public String getName() {
         return name;
+    }
+    
+    public int getAge() {
+        return age;
     }
 
     public static void main(String[] args) {
@@ -27,7 +33,10 @@ public class Personn {
         System.out.println("Enter Name: ");
         String name = scan.nextLine();
         
-        Personn person = new Personn(name);
-        System.out.println("Name: " + person.getName());
+        System.out.println("Enter Age: ");
+        int age = scan.nextInt();
+        
+        Personn person = new Personn(name, age);
+        System.out.println("Name: " + person.getName() + ", Age: " + person.getAge());
     }
 }
