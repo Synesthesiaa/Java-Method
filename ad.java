@@ -1,13 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
 
-package com.mycompany.person;
-
-/**
- *
- * @author Administrator
- */
 import java.util.Scanner;
 public class Person {
     private String name;
@@ -31,10 +22,6 @@ public class Person {
     }
 
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        
-        System.out.println("");
-        String Person = scan.nextLine();
         
         Person person1 = new Person("John", 30, "09434296892", "male");
         person1.displayInfo();
